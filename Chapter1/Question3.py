@@ -1,11 +1,11 @@
 
 text = "Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
 
-list = text.split(" ")
+li = text.split(" ")
 
-for i in range(len(list)):
-    print(list[i])
-    tmp = list[i].replace(",", "")
-    list[i] = len(tmp)
+for i in range(len(li)):
+    print(li[i])
+    tmp = li[i].replace(",", "")
+    li[i] = len(tmp)
 
-print(list)
+print(li)
