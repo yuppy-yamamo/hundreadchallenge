@@ -7,7 +7,8 @@ def bigram_search(obj):
             ans.append(bigram_extraction(obj[i]))
 
     else:
-        ans = bigram_extraction(obj)
+        tmp = obj.replace(" ", "")
+        ans = bigram_extraction(tmp)
 
     return ans
 
@@ -23,9 +24,6 @@ def bigram_extraction(str):
 
 
 if __name__ == "__main__":
-    str = "アイウエオ"
-    li = ["カキクケコ", "サシスセソ"]
-    str_list = bigram_search(str)
-    print(str_list)
-    li_list = bigram_search(li)
-    print(li_list)
+    text = "I am an NLPer"
+    ans_list = bigram_search(text)
+    print(ans_list)
