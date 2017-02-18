@@ -2,6 +2,7 @@
 # Question19.py [filename]
 import sys
 
+
 def sort_emergence(filename):
     file = open(filename, "r")
     lines = file.readlines()
