@@ -2,7 +2,6 @@
 import sys
 
 args = sys.argv
-length = len(args)
 
 filename = args[1]
 n = int(args[2])
